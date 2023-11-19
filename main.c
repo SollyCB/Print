@@ -7,11 +7,11 @@ typedef struct {
 } Thing;
 
 int main() {
-    int x = 2;
+    s64 x = 182974987923;
 
-    println("%zhi", x);
-    println("%zih", x);
-    println("%izh", x);
+    println("%zbi", x);
+    println("%zib", x);
+    println("%izb", x);
 
     return 0;
 }

@@ -216,6 +216,7 @@ inline static void parse_signed_int(Print_Config *config, s64 i, int *buf_pos, c
 inline static void parse_unsigned_int(Print_Config *config, s64 i, int *buf_pos, char *print_buffer) {
     parse_int(config, i, buf_pos, print_buffer);
 }
+
 typedef enum {
     PRINT_VALUE_STRING,
     PRINT_VALUE_CHAR,
@@ -226,6 +227,7 @@ typedef enum {
     PRINT_VALUE_BIN,
     PRINT_VALUE_LZ,
 } Print_Value;
+
 inline static bool print_check_config_flags(Print_Flags flags, Print_Value value) {
     switch(value) {
     case PRINT_VALUE_STRING:
